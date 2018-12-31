@@ -1,0 +1,31 @@
+{
+  "name": "news",
+  "version": "1.0.0",
+  "description": "homework18",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RodneyGT2018/news.git"
+  },
+  "author": "Rodney Stephenson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RodneyGT2018/news/issues"
+  },
+  "homepage": "https://github.com/RodneyGT2018/news#readme",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.3",
+    "cheerio": "^1.0.0-rc.2",
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.0",
+    "materialize": "^1.0.0",
+    "mongoose": "^5.4.1",
+    "promise": "^8.0.2",
+    "request": "^2.88.0"
+  }
+}
