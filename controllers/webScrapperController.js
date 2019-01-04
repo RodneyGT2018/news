@@ -4,7 +4,7 @@ let mongoose = require('mongoose');
 let db = require("../models"); 
 
 mongoose.Promise = Promise; 
-mongoose.connect("mongodb://localhost/mongoHeadlines", { 
+mongoose.connect("mongodb://@ds145704.mlab.com:45704/heroku_j76b2drj", { 
   useNewUrlParser: true
 });
 
@@ -13,7 +13,7 @@ let mongooseConnection = mongoose.connection;
 
 mongooseConnection.on('error', console.error.bind(console, 'connection error:'));
 mongooseConnection.once('open', function() {
-  console.log(`Sucessfully Connected to Mongo DB !`); 
+  console.log(`Sucessfully Connected to MongoDB !`); 
 });
 
 // Export routes called from server.js
