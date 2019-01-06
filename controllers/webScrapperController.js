@@ -6,7 +6,7 @@ let db = require("../models"); // Require all models
 
 /////////////////////////////////////////////// /* Mongoose Configuration */ ////////////////////////////////////////////////////////
 mongoose.Promise = Promise; // Set mongoose to leverage Built in JavaScript ES6 Promises
-mongoose.connect("mongodb://@ds145704.mlab.com:45704/heroku_j76b2drj", { // Connect to the Mongo DB
+mongoose.connect("mongodb://heroku_j76b2drj:eg7d6ph5hh736hbi08sq5nvsfg@ds145704.mlab.com:45704/heroku_j76b2drj", { // Connect to the Mongo DB
   useMongoClient: true
 });
 
