@@ -6,7 +6,7 @@ let db = require("../models");
 
 // Mongoose Config
 mongoose.Promise = Promise; 
-mongoose.connect("mongodb://localhost/mongoHeadlines", { // Connect to the Mongo DB (comes from result of inputting the following into the terminal: "heroku config:get MONGODB_URI")
+mongoose.connect("mongodb://localhost/mongoHeadlines", { 
   useMongoClient: true
 });
 
