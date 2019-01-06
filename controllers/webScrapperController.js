@@ -6,7 +6,7 @@ let db = require("../models");
 
 // Mongoose Config
 mongoose.Promise = Promise; 
-mongoose.connect("mongodb://heroku_j76b2drj:eg7d6ph5hh736hbi08sq5nvsfg@ds145704.mlab.com:45704/heroku_j76b2drj", { // Connect to the Mongo DB (comes from result of inputting the following into the terminal: "heroku config:get MONGODB_URI")
+mongoose.connect("mongodb://localhost/mongoHeadlines", { // Connect to the Mongo DB (comes from result of inputting the following into the terminal: "heroku config:get MONGODB_URI")
   useMongoClient: true
 });
 
@@ -17,8 +17,7 @@ mongooseConnection.once('open', function() {
   console.log(`Sucessfully Connected to Mongo DB !`); 
 });
 
-// Exports
-module.exports = (app) => { // Export Module Containing Routes. Called from Server.js
+module.exports = (app) => { 
 
 
   // Default Route
